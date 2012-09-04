@@ -1,0 +1,14 @@
+django>=1.4
+ipython
+south
+fabric
+sphinx
+coverage
+nose
+django-nose
+nosecolor
+django_compressor
+django-crispy-forms
+pytz
+pylint
+pep8
