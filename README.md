@@ -27,9 +27,15 @@ database names and passwords. Here's an example:
     }
 
 
+## Extras
+
+Add things to settings such as south and django-nose.
+
 ## Sync database
 
-    python manage.py syncdb
+    ./manage.py syncdb
+    ./manage.py schemamigration mainapp --initial
+    ./manage.py migrate mainapp
 
 
 ## Running
