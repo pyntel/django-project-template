@@ -3,6 +3,7 @@ import json
 
 PROJECT_DIR = os.path.dirname(__file__)
 PUBLIC_DIR = os.path.join(PROJECT_DIR, 'public')
+TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
 
 DEBUG = False
 
@@ -133,6 +134,8 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.admin',
+    'south',
+    'django_nose', # has to come *after* south
     'mainapp',
 )
 
